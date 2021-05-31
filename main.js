@@ -23,42 +23,4 @@ function player_update(get_image){
         canvas.add(player_image);
     });
 }
-window.addEventListener("keydown", keydown);
-function keydown(e){
-    var keydown = e.keyCode;
-    console.log(keydown);
-    if(e.shiftKey == true && keydown == "80"){
-        console.log("p and shift together");
-        height += 10;
-        width += 10;
-        document.getElementById("height").innerHTML = height;
-        document.getElementById("width").innerHTML = width;
-    }
-    if(e.shiftKey == true && keydown == "77"){
-        console.log("m and shift together");
-        height -= 10;
-        width -= 10;
-        document.getElementById("height").innerHTML = height;
-        document.getElementById("width").innerHTML = width;
-    }
-    if(keydown == "70"){
-        console.log("f");
-        player_update("https://lh3.google.com/u/0/d/1RjtrVFlLkNwDUGwQHSjY2WAJOEFjMjsE=w400-h380-p-k-nu-iv1")
-    }
-    if(keydown == "66"){
-        console.log("b");
-        player_update("https://lh3.google.com/u/0/d/1nI4k5m6r52xSbRUack7TbIa_U8YvzUt9=w400-h380-p-k-nu-iv1");
-    }
-    if(keydown == "76"){
-        console.log("l");
-        player_update("https://lh3.google.com/u/0/d/1PHnkIw5TK441tEvAbSwJ5NlS5ZtDCKSD=w400-h380-p-k-nu-iv1");
-    }
-    if(keydown == "82"){
-        console.log("r");
-        player_update("https://lh3.google.com/u/0/d/1hNsjZZWyHXhN0f4yOLjqRNlcB0YpiyNi=w400-h380-p-k-nu-iv1");
-    }
-    if(keydown == "72"){
-        console.log("h");
-        player_update("https://lh3.google.com/u/0/d/1JGZlMGfmfzmBiKHvoeeaYsOvJZ96LA88=w400-h380-p-k-nu-iv1");
-    }
-}
+player_update("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/295fb76c-7179-4c70-a508-a1cce61a876f/dc5bss3-525d66e4-1c8d-4063-b1ad-61f060ce9983.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI5NWZiNzZjLTcxNzktNGM3MC1hNTA4LWExY2NlNjFhODc2ZlwvZGM1YnNzMy01MjVkNjZlNC0xYzhkLTQwNjMtYjFhZC02MWYwNjBjZTk5ODMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NyuuWGWDXMbTSWSC1j1DGKbCTzhP4U7W0lqvWNU1y7Q");
